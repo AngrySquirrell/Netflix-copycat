@@ -11,65 +11,80 @@
     <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
 </head>
 
-<body>
+<body class="overflow-hidden bg-black">
 
     <header class="">
-        <section class="bg-gradient-to-b from-black">
-            <img src="assets\netflix-header.png" class="h-16 hidden mx-auto xl:hidden md:block"></i>
-        <div class="h-24 justify-between content-start text-white pr-8 pl-8 hidden xl:flex md:hidden">
-            <div class="flex items-center justify-start  m-8 ">
-                <div class="">
-                    <img src="assets\netflix-header.png" class="w-24 h-14 content-start hover:cursor-pointer"></i>
+        <section class="bg-gradient-to-b from-black w-full absolute ">
+            <img src="assets\netflix-header.png"
+                class="h-16 hidden mx-auto xl:hidden md:block hover:cursor-pointer"></i>
+            <div
+                class="h-24 relative justify-between content-start text-white pr-8 pl-8 hidden xl:flex md:flex z-100">
+                <div class="flex items-center justify-start  m-8 ">
+                    <div class="">
+                        <img src="assets\netflix-header.png" class="w-24 h-14 content-start hover:cursor-pointer">
+                    </div>
+                    <div>
+                        <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
+                            Acceuil
+                        </a>
+                    </div>
+                    <div>
+                        <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
+                            TV Shows
+                        </a>
+                    </div>
+                    <div>
+                        <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
+                            Movies
+                        </a>
+                    </div>
+                    <div>
+                        <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
+                            New & Popular
+                        </a>
+                    </div>
+                    <div>
+                        <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
+                            Watch Again
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
-                        Acceuil
-                    </a>
-                </div>
-                <div>
-                    <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
-                        TV Shows
-                    </a>
-                </div>
-                <div>
-                    <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
-                        Movies
-                    </a>   
-                </div>
-                <div>
-                    <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
-                        New & Popular
-                    </a>
-                </div>
-                <div>
-                    <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer" hrel="#">
-                        Watch Again
-                    </a>
-                </div>
-            </div>
-            
-            <div class="flex text-white p-8">
-                <div>
-                    <i class="fas fa-search w-12 l-12 hover:duration-150 hover:cursor-pointer"></i>
-                </div>
-                <div>
-                    <i class="fas fa-gift w-12 l-12 hover:duration-150 hover:cursor-pointer"></i>
-                </div>
-                <div>
-                    <i class="fas fa-bell w-12 l-12 hover:duration-150 hover:cursor-pointer"></i>
-                </div>
-                <div>
-                    <img class="rounded hover:duration-150 hover:cursor-pointer" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYnnca7HCf0z4YHtIK5R8MIGCeMyodAsxBYSBmMkYHqjSw46VWWyNQirfwxT-CkbxPkp-G84Wu-iOMwGG-r9QAs.png?r=f71" alt="">
-                </div>
-                <div>
-                    <i class="fa-solid fa-chevron-down w-12 l-12 pt-2"></i>
+
+                <div class="flex text-white p-8">
+                    <div>
+                        <i class="fas fa-search w-12 l-12 hover:duration-150 hover:cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-gift w-12 l-12 hover:duration-150 hover:cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-bell w-12 l-12 hover:duration-150 hover:cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <img class="rounded hover:duration-150 hover:cursor-pointer"
+                            src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYnnca7HCf0z4YHtIK5R8MIGCeMyodAsxBYSBmMkYHqjSw46VWWyNQirfwxT-CkbxPkp-G84Wu-iOMwGG-r9QAs.png?r=f71">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-down w-12 l-12 pt-2"></i>
+                    </div>
                 </div>
             </div>
 
-        </div>
-        <div class="background-image:'assets\SeriesWallpaper.jpg'">
-            
-        </div>
+            <div class="z-0">
+                <img src="assets\SeriesWallpaper.jpg"
+                    class="min-w-full lg:min-w-1024 absolute -z-50 top-0 "></img>
+                <div class="ml-16 mt-56">
+                    <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABU-WMH-4JccrEpqXa32BSdEYmol_LgPoZ6cvMp1nE9m6ekbjwdNqBNP8hQtYTs8LEMCPYfMuzP1jzCG39VaUGJAgd3a9pz9cA1yplDAsnpW_FMonJNA11PL2LTmSCcpD89vP6kqRMxgyK0DVBA4SjqHCIe6DA4FsdMx6UKeWIBrE.webp?r=4ce"
+                        class=" object-none absolute"></i>
+                    <p class="text-white font-semibold ">
+                        Les sœurs orphelines Vi et Powder causent des remous dans les rues <br>
+                        souterraines de Zaun à la suite d'un braquage dans le très huppé Piltover.
+                    </p>
+                    <button class="absolute mt-60 bg-white text-black p-2 rounded hover:opacity-75 m-2"><i class="fas fa-play p-2"></i>Lecture</button>
+                    <button class="absolute mt-60 ml-32 opacity-75 bg-gray-400 text-white p-2 rounded hover:bg-gray-300 m-2"><i class="fa fa-info p-2"></i>More info</button>
+                </div>
+            </div>
+
         </section>
     </header>
 
