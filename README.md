@@ -6,6 +6,6 @@ For the moment, only the header and main is available. <br>
 ## Future Addons :
  ### Later add-ons are :
  - Animation using some JS <br>
- - A proper footer <br>
+ - A proper footer <br> `DONE`
  - Videos like the real Netflix <br>
  - Redirecting to the real site on series selection
