@@ -5,7 +5,7 @@ For the moment, only the header and main is available. <br>
 /!\ NOW WORKING LINKS ! <br>
 ## Future Addons :
  ### Later add-ons are :
- - Animation using some JS <br>
- - A proper footer <br>
- - Videos like the real Netflix <br>
- - Redirecting to the real site on series selection
+ - Animation using some JS <br> `IN QUEUE`
+ - A proper footer <br> `DONE`
+ - Videos like the real Netflix <br> `IN QUEUE`
+ - Redirecting to the real site on series selection <br> `ALMOST DONE`
