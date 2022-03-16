@@ -12,9 +12,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/bd71bc8729.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
+    <script src="assets\js\main.js"></script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
 </head>
 
-<body class="bg-zinc-900 select-none cursor-auto overflow-x-hidden">
+<body class="bg-black select-none cursor-auto overflow-x-hidden no-scrollbar">
     <header class="">
         <section class="bg-gradient-to-b from-black w-full fixed top-0 ">
             <img src="assets\netflix-header.png"
@@ -23,7 +34,7 @@
             <div class=" flex xl:flex md:hidden ">
                 <div class="items-center h-24 text-white px-8 z-100 mx-8 flex justify-between justify-between w-full">
 
-                    <nav class="flex items-center">
+                    <nav class="flex items-center ">
                         <div>
                             <img src="assets\netflix-header.png" class="w-24 h-14 content-start hover:cursor-pointer">
                         </div>
@@ -59,7 +70,7 @@
                         </div>
                     </nav>
 
-                    <nav class="flex text-white m-8 right-0">
+                    <nav class="flex text-white m-8 right-0 no-scrollbar">
                         <div>
                             <i class="fas fa-search w-12 l-12 hover:duration-150 hover:cursor-pointer"></i>
                         </div>
@@ -127,11 +138,18 @@
 
         <!--                                For you                                                   -->
 
-        <section class="px-8 ">
+        <section class="px-8 group">
+                <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">For you</p>
 
-            <p class="text-white font-bold text-2xl space-x-4 pt-4 padding4px">For you</p>
+            <nav class=" flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar " id="for_you">
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
+            <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                <button onclick="goLeft('for_you')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+            </div>
+            <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                <button onclick="goRight('for_you')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+            </div>
+
                 <div>
                     <div class="w-72">
                         <a href="https://www.netflix.com/watch/80198377"><img class="w-72 rounded"
@@ -216,17 +234,24 @@
                                 src="assets\Series\AngelBeast.jpg"></a>
                     </div>
                 </div>
-
             </nav>
         </section>
 
         <!--                                Your list                                                   -->
 
-        <section class="px-8 ">
+        <section class="px-8 group">
 
-            <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Your List</p>
+            <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">Your list</p>
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
+            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="your_list">
+
+                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('your_list')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('your_list')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
+
                 <div>
                     <div class="w-72">
                         <a href="https://www.netflix.com/watch/81221020"><img class="w-72 rounded"
@@ -257,17 +282,43 @@
                                 src="assets\Series\SkyHighSurvival.jpg"></a>
                     </div>
                 </div>
+                <div>
+                    <div class="w-72">
+                        <a href="https://www.netflix.com/watch/81056764"><img class="w-72 rounded"
+                                src="assets\Series\SkyHighSurvival.jpg"></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-72">
+                        <a href="https://www.netflix.com/watch/81056764"><img class="w-72 rounded"
+                                src="assets\Series\SkyHighSurvival.jpg"></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-72">
+                        <a href="https://www.netflix.com/watch/81056764"><img class="w-72 rounded"
+                                src="assets\Series\SkyHighSurvival.jpg"></a>
+                    </div>
+                </div>
 
             </nav>
         </section>
 
         <!--                                Japanese Animation                                                   -->
 
-        <section class="px-8 ">
+        <section class="px-8 group">
 
-            <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Japanese Animation</p>
+                <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">Japanese Animation</p>
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
+            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="japanese_animation">
+
+                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('japanese_animation')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('japanese_animation')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
+
                 <div>
                     <div class="w-72">
                         <a href="https://www.netflix.com/watch/80174932"><img class="w-72 rounded"
@@ -308,7 +359,7 @@
             <p class="text-white font-bold text-2xl space-x-4 pt-4 ">TV Shows by genre</p>
 
             <nav
-                class="space-x-4 mt-8 mb-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-4 rounded ">
+                class="space-x-4 mt-8 mb-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-4 rounded no-scrollbar">
                 <div class="w-48 relative overflow-hidden rounded-lg cursor-pointer z-1 ml-4">
                     <a href="#"><img class="object-cover w-48 rounded" src="assets\Series\BlackMirror.jpg"></a>
                     <div
@@ -414,11 +465,19 @@
 
         <!--                                Netflix Originals                                                   -->
 
-        <section class="px-8 ">
+        <section class="px-8 group">
 
             <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Netflix Originals</p>
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
+            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="netflix_originals">
+
+                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-40 w-48 h-[403px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('netflix_originals')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-40 w-48 h-[403px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('netflix_originals')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
+
                 <div>
                     <div class="w-72">
                         <a href="https://www.netflix.com/watch/81283586"><img class="w-72 rounded"
@@ -472,11 +531,18 @@
 
         <!--                                Top 10                                                   -->
 
-        <section class="px-8 ">
+        <section class="px-8 group">
             <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Top 10</p>
-            <nav class="pl-20 pt-20">
+            <nav class="pl-20 pt-20" id="top_10">
 
-                <div class="overflow-x-auto flex scroll scroll-auto mt-6 overflow-hidden">
+                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('top_10')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('top_10')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
+
+                <div class="overflow-x-auto flex scroll scroll-auto mt-6 overflow-hidden no-scrollbar">
                     <svg width="5%" height="100%" viewBox="-20 0 70 154">
                         <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
                             d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z">
@@ -512,11 +578,19 @@
 
         <!--                                Films de SF                                                  -->
 
-        <section class="px-8 ">
+        <section class="px-8 group">
 
             <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Films de SF</p>
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
+            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="films_sf">
+
+                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('films_sf')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('films_sf')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
+
                 <div>
                     <div class="w-72">
                         <a href="https://www.netflix.com/watch/80174932"><img class="w-72 rounded"
@@ -557,7 +631,15 @@
 
             <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Studios Ghibli</p>
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
+            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="studios_ghibli">
+
+                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('studios_ghibli')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('studios_ghibli')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
+
                 <div>
                     <div class="w-72">
                         <a href="https://www.netflix.com/watch/80174932"><img class="w-72 rounded"
@@ -609,7 +691,15 @@
 
             <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Dessins Animés</p>
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
+            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="dessins_animés">
+
+                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('dessins_animés')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('dessins_animés')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
+
                 <div>
                     <div class="w-72">
                         <a href="https://www.netflix.com/watch/80174932"><img class="w-72 rounded"
@@ -648,9 +738,17 @@
 
         <section class="px-8 ">
 
-            <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Films et Séries à Succès</p>
+            <p class="text-white font-bold text-2xl space-x-4 pt-4">Films et Séries à Succès</p>
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
+            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="succes">
+
+                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('succes')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('succes')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
+
                 <div>
                     <div class="w-72">
                         <a href="https://www.netflix.com/watch/80174932"><img class="w-72 rounded"
@@ -684,50 +782,10 @@
 
             </nav>
         </section>
-
-        <!--                                Dessins Animés                                                  -->
-
-        <section class="px-8 ">
-
-            <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Japanese Animation</p>
-
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll">
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/80174932"><img class="w-72 rounded"
-                                src="assets\Series\LesEnfantsDeLaBalaine.jpg"></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/80204507"><img class="w-72 rounded"
-                                src="assets\Series\VioletEvergarden.jpg"></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81281872"><img class="w-72 rounded"
-                                src="assets\Series\LoinDeToiPresDeMoi.jpg"></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81164590"><img class="w-72 rounded"
-                                src="assets\Series\LeCupheadShow.jpg"></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81449691"><img class="w-72 rounded"
-                                src="assets\Series\BluePeriod.jpg"></a>
-                    </div>
-                </div>
-
-            </nav>
-        </section>
-
-
     </main>
+
+
+
 
     <footer class="flex justify-center">
         <section>
