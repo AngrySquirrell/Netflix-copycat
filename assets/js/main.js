@@ -7,6 +7,45 @@ function goLeft (container) {
     document.getElementById(container).scrollLeft -= offset;
 };
 
+$(function () {
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop() > 120) {
+        $("#navbar").css("backgroundColor", "black");
+      } else if ($(window).scrollTop() > 20){
+        $("#navbar").css("backgroundColor", "#181818");
+      }
+      else {
+        $("#navbar").css("backgroundColor", "transparent");
+      }
+    });
+  });
+
+function randNumber (arg, it){
+    let arr = []
+    switch (arg) {
+        case "rm":
+            console.log("Case RM selected")
+            console.log(arr)
+            while (arr.length > 0){
+                arr.shift();
+            }
+        break;
+
+        case "":
+            console.log("Case '' selected")
+            let r = Math.floor(Math.random() * it)
+            while (true){
+                if (arr.indexOf(r) === -1) {
+                    arr.push(r)
+                    console.log(r)
+                    console.log(arr)
+                    break;
+                };
+            }
+            return r;
+    }
+}
+
 
 window.onload = function () { 
 
@@ -39,9 +78,9 @@ window.onload = function () {
     var MyList = document.getElementById("for_you")
     while (i < 10) {
       i++;
-      MyList.innerHTML += ('afterend', '<div><div class="w-72 "><a href="#"><img src="' + images[Math.floor(Math.random() * images.length)] + '" class="w-72 rounded"></a></div></div>')
+      MyList.innerHTML += ('afterend', '<div><div class="w-72 "><a href="#"><img src="' + images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
     }
-
+    randNumber("rm")
         //JAPANESE ANIMATION
 
     console.log(Math.floor(Math.random() * 10));
@@ -71,9 +110,9 @@ window.onload = function () {
     var MyList = document.getElementById("japanese_animation")
     while (i < 10) {
       i++;
-      MyList.innerHTML += ('afterend', '<div><div class="w-72 "><a href="#"><img src="'+ images[Math.floor(Math.random() * images.length)] + '" class="w-72 rounded"></a></div></div>')
+      MyList.innerHTML += ('afterend', '<div><div class="w-72 "><a href="#"><img src="'+ images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
     }
-
+    randNumber("rm")
         //FILMS DE SF
 
     console.log(Math.floor(Math.random() * 10));
@@ -96,9 +135,9 @@ window.onload = function () {
     var MyList = document.getElementById("films_sf")
     while (i < 10) {
         i++;
-        MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[Math.floor(Math.random() * images.length)] + '" class="w-72 rounded"></a></div></div>')
+        MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
     } 
-
+    randNumber("rm")
         //STUDIOS  GHIBLI
 
     console.log(Math.floor(Math.random() * 10));
@@ -122,9 +161,9 @@ window.onload = function () {
         var MyList = document.getElementById("studios_ghibli")
         while (i < 10) {
           i++;
-          MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[Math.floor(Math.random() * images.length)] + '" class="w-72 rounded"></a></div></div>')
-        }
-
+          MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
+    }
+    randNumber("rm")
         //Dessins Animes
 
     console.log(Math.floor(Math.random() * 10));
@@ -153,6 +192,6 @@ window.onload = function () {
         var MyList = document.getElementById("dessins_animes")
         while (i < 10) {
           i++;
-          MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[Math.floor(Math.random() * images.length)] + '" class="w-72 rounded"></a></div></div>')
+          MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
         }
   }
