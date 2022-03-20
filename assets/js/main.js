@@ -1,4 +1,5 @@
-const offset = 304
+const offset = 304;
+const arr = [];
 
 function goRight (container) {
     document.getElementById(container).scrollLeft += offset;
@@ -7,6 +8,7 @@ function goLeft (container) {
     document.getElementById(container).scrollLeft -= offset;
 };
 
+//Darken the navbar on scroll
 $(function () {
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 120) {
@@ -20,8 +22,8 @@ $(function () {
     });
   });
 
+// Gererate/Erase random number + no doubles
 function randNumber (arg, it){
-    let arr = []
     switch (arg) {
         case "rm":
             console.log("Case RM selected")
@@ -30,28 +32,30 @@ function randNumber (arg, it){
                 arr.shift();
             }
         break;
-
         case "":
             console.log("Case '' selected")
             let r = Math.floor(Math.random() * it)
-            while (true){
-                if (arr.indexOf(r) === -1) {
+            let i = 0
+            while(i != it){
+                r = Math.floor(Math.random() * it)
+                if (arr.indexOf(r) != -1) {
+                    console.log(arr.indexOf(r) + " in if "+ arr + " ")
+                    i--
+                } else {
+                    console.log(arr.indexOf(r) + " in else "+ arr)
                     arr.push(r)
-                    console.log(r)
-                    console.log(arr)
-                    break;
-                };
+                    return r;
+                }
             }
-            return r;
+        break;
     }
 }
 
-
+//Create div with images with random order
 window.onload = function () { 
 
         //FOR YOU
 
-    console.log(Math.floor(Math.random() * 10));
     var images = [
         './assets/Series/Aggretsuko.jpg',
         './assets/Series/AngelBeast.jpg',
@@ -71,19 +75,18 @@ window.onload = function () {
         './assets/Series/NosMotsCommeDesBulles.jpg',
         './assets/Series/SkyHighSurvival.jpg',
         './assets/Series/toradora.jpg',
-        './assets/Series/SkyHighSurvival.jpg',
+        './assets/Series/CodeLyoko.jpg',
         './assets/Series/Viking.jpg'
-    ];
+    ]; //20
   var i = 0;
     var MyList = document.getElementById("for_you")
-    while (i < 10) {
+    while (i < images.length) {
       i++;
-      MyList.innerHTML += ('afterend', '<div><div class="w-72 "><a href="#"><img src="' + images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
+      MyList.innerHTML += ('afterend', '<div><div class="w-72 "><a href="#"><img src="' + images[randNumber("",images.length)] + '" class="w-72 rounded"></a></div></div>')
     }
     randNumber("rm")
         //JAPANESE ANIMATION
 
-    console.log(Math.floor(Math.random() * 10));
     var images = [
         './assets/Series/GreatPretender.jpg',
         './assets/Series/BNA.jpg',
@@ -108,14 +111,13 @@ window.onload = function () {
     ];
   i = 0;
     var MyList = document.getElementById("japanese_animation")
-    while (i < 10) {
+    while (i < images.length) {
       i++;
-      MyList.innerHTML += ('afterend', '<div><div class="w-72 "><a href="#"><img src="'+ images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
+      MyList.innerHTML += ('afterend', '<div><div class="w-72 "><a href="#"><img src="'+ images[randNumber("",images.length)] + '" class="w-72 rounded"></a></div></div>')
     }
     randNumber("rm")
         //FILMS DE SF
 
-    console.log(Math.floor(Math.random() * 10));
     var images = [
             './assets/Series/BlackSummer.jpg',
             './assets/Series/LeChateauAmbulant.jpg',
@@ -133,14 +135,13 @@ window.onload = function () {
     ];
     i= 0;
     var MyList = document.getElementById("films_sf")
-    while (i < 10) {
+    while (i < images.length) {
         i++;
-        MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
+        MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",images.length)] + '" class="w-72 rounded"></a></div></div>')
     } 
     randNumber("rm")
         //STUDIOS  GHIBLI
 
-    console.log(Math.floor(Math.random() * 10));
     var images = [
         './assets/Series/LaCollineAuxCoquelicots.jpg',
         './assets/Series/LeChateauAmbulant.jpg',
@@ -159,14 +160,13 @@ window.onload = function () {
         ];
       i= 0;
         var MyList = document.getElementById("studios_ghibli")
-        while (i < 10) {
+        while (i < images.length) {
           i++;
-          MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
+          MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",images.length)] + '" class="w-72 rounded"></a></div></div>')
     }
     randNumber("rm")
         //Dessins Animes
 
-    console.log(Math.floor(Math.random() * 10));
     var images = [
         './assets/Series/Arcane.jpg',
         './assets/Series/Aggretsuko.jpg',
@@ -181,7 +181,7 @@ window.onload = function () {
         './assets/Series/YourName.jpg',
         './assets/Series/NGNL.jpg',
         './assets/Series/jojo.jpg',
-        './assets/Series/AstérixetObélix.jpg',
+        './assets/Series/AsterixetObelix.jpg',
         './assets/Series/FamilleLoud.jpg',
         './assets/Series/CodeLyoko.jpg',
         './assets/Series/Garfield.jpg',
@@ -190,8 +190,8 @@ window.onload = function () {
         ];
       i= 0;
         var MyList = document.getElementById("dessins_animes")
-        while (i < 10) {
+        while (i < images.length) {
           i++;
-          MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",10)] + '" class="w-72 rounded"></a></div></div>')
+          MyList.innerHTML += ('afterend', '<div><div class="w-72"><a href="#"><img src="' + images[randNumber("",images.length)] + '" class="w-72 rounded"></a></div></div>')
         }
   }
