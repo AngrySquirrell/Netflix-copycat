@@ -9,3 +9,4 @@ For the moment, only the header and main is available. <br>
  - A proper footer <br> `DONE`
  - Videos like the real Netflix <br> `IN QUEUE`
  - Redirecting to the real site on series selection <br> `ALMOST DONE`
+ - Random generated images (w/o doubles) <br> `DONE`
