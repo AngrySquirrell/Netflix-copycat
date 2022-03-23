@@ -8,6 +8,45 @@ function goLeft (container) {
     document.getElementById(container).scrollLeft -= offset;
 };
 
+// function onMouseOver(){
+//    document.getElementById('bannerImage').classList.add('hidden')
+//    document.getElementById('bannerVideo').classList.remove('hidden')
+//    document.getElementById('bannerVideo').play()
+// }
+// function onMouseOut(){
+//    document.getElementById('bannerImage').classList.add('hidden')
+//    document.getElementById('bannerVideo').classList.remove('hidden')
+//    document.getElementById('bannerVideo').pause()
+// }
+
+$(document).ready(function () {
+    $("#video").css("display", "none"); //HIDE THE VIDEO INITIALLY
+    $(".thumbnail").hover(function () {
+            $(".head-img").css("display", "none");
+            $("#video").css("display", "block"); //SHOW THE VIDEO ON HOVER
+            $(this).children("video")[0].play();
+            }, 
+
+    function () {
+        var el = $(this).children("video")[0];
+        el.pause();
+        $("#video").css("display", "none");
+        $(".head-img").css("display", "block");
+    });
+});
+
+// document.getElementById("banner").addEventListener("mouseover", function() {
+// 	document.getElementById('bannerImage').classList.add('hidden')
+//     document.getElementById('bannerVideo').classList.remove('hidden')
+// });
+
+// document.getElementById("banner").addEventListener("mouseleave", function() {
+//     document.getElementById('bannerImage').classList.add('hidden')
+//     document.getElementById('bannerVideo').classList.remove('hidden')
+// });
+
+
+
 //Darken the navbar on scroll
 $(function () {
     $(window).on("scroll", function () {

@@ -17,16 +17,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
     <script src="assets\js\main.js"></script>
-    <style>
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+    <link href="./asset/css/style.css" rel="stylesheet">
 </head>
 
 <body class="bg-black select-none cursor-auto overflow-x-hidden no-scrollbar">
@@ -103,9 +94,10 @@
             </div>
         </section>
         <section class="h-screen">
-            <div>
+            <div class="thumbnail">
 
-                <img src="./assets/SeriesWallpaper.jpg" alt="Arcane" class="w-full h-screen object-cover" />
+                <img src="./assets/SeriesWallpaper.jpg" alt="osef" class="head-img w-full h-screen object-cover">
+                <video src="./assets/Videos/TeaserArcane.mp4" muted loop class="w-full h-screen object-cover" id="video"></video>
 
                 <div class="absolute top-40 px-16">
 
@@ -142,7 +134,7 @@
 
         <!--                                For you                                                   -->
 
-        <section class="px-8 group">
+        <section class="px-8 group" onmouseover="onMouseOut()">
                 <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">For you</p>
 
             <nav class=" flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar " id="for_you">
