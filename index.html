@@ -12,25 +12,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/bd71bc8729.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets\js\main.js"></script>
     <style>
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
 
-    .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 
 <body class="bg-black select-none cursor-auto overflow-x-hidden no-scrollbar">
-    <header class="" >
+    <header class="">
         <section class="bg-gradient-to-b from-black w-full fixed top-0 z-100" id="navbar">
             <img src="assets\netflix-header.png"
                 class="h-16 hidden mx-auto xl:hidden md:block hover:cursor-pointer "></i>
@@ -106,7 +104,8 @@
             <div class="thumbnail">
 
                 <img src="./assets/SeriesWallpaper.jpg" alt="osef" class="head-img w-full h-screen object-cover">
-                <video src="./assets/Videos/TeaserArcane.mp4" muted loop class="w-full h-screen object-cover" id="video"></video>
+                <video src="./assets/Videos/TeaserArcane.mp4" loop class="w-full h-screen object-cover"
+                    id="video"></video>
 
                 <div class="absolute top-40 px-16">
 
@@ -144,16 +143,20 @@
         <!--                                For you                                                   -->
 
         <section class="px-8 group" onmouseover="onMouseOut()">
-                <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">For you</p>
+            <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">For you</p>
 
             <nav class=" flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar " id="for_you">
 
-            <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
-                <button onclick="goLeft('for_you')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
-            </div>
-            <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
-                <button onclick="goRight('for_you')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
-            </div>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('for_you')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                </div>
+                <div
+                    class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('for_you')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                </div>
 
             </nav>
         </section>
@@ -166,11 +169,15 @@
 
             <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="your_list">
 
-                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
-                    <button onclick="goLeft('your_list')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('your_list')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
-                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
-                    <button onclick="goRight('your_list')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                <div
+                    class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('your_list')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
                 <div>
@@ -229,15 +236,19 @@
 
         <section class="px-8 group">
 
-                <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">Japanese Animation</p>
+            <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">Japanese Animation</p>
 
             <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="japanese_animation">
 
-                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
-                    <button onclick="goLeft('japanese_animation')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('japanese_animation')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
-                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
-                    <button onclick="goRight('japanese_animation')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                <div
+                    class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('japanese_animation')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
             </nav>
@@ -361,11 +372,15 @@
 
             <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="netflix_originals">
 
-                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-40 w-48 h-[403px] left-0 bg-gradient-to-r from-black">
-                    <button onclick="goLeft('netflix_originals')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-40 w-48 h-[403px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('netflix_originals')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
-                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-40 w-48 h-[403px] bg-gradient-to-l from-black">
-                    <button onclick="goRight('netflix_originals')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                <div
+                    class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-40 w-48 h-[403px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('netflix_originals')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
                 <div>
@@ -423,114 +438,148 @@
 
         <section class="px-8 group">
             <p class="text-white font-bold text-2xl space-x-4 pt-4 ">Top 10</p>
-            <nav class="pl-8 pt-20" >
+            <nav class="pl-8 pt-20">
 
-                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-12 w-48 h-96 left-0 bg-gradient-to-r from-black">
-                    <button onclick="goLeft('top_10')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-12 w-48 h-96 left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('top_10')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
-                <div class="absolute right-0 text-3xl opacity-0 group-hover:opacity-100 pt-12 w-48 h-96 bg-gradient-to-l from-black">
-                    <button onclick="goRight('top_10')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                <div
+                    class="absolute right-0 text-3xl opacity-0 group-hover:opacity-100 pt-12 w-48 h-96 bg-gradient-to-l from-black">
+                    <button onclick="goRight('top_10')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
                 <div class="flex justify-between space-x-2 w-48 h-96 " id="top_10">
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_1.png?v=1646828242129" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_1.png?v=1646828242129"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\1.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\1.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_2.png?v=1646828249187" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_2.png?v=1646828249187"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\2.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\2.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_3.png?v=1646828251732" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_3.png?v=1646828251732"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\3.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\3.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_4.png?v=1646828242203" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_4.png?v=1646828242203"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\4.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\4.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_5.png?v=1646828252069" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_5.png?v=1646828252069"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\5.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\5.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_6.png?v=1646828252141" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_6.png?v=1646828252141"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\6.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\6.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_7.png?v=1646828248694" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_7.png?v=1646828248694"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\7.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\7.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_8.png?v=1646828249157" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_8.png?v=1646828249157"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\8.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\8.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_9.png?v=1646828242174" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_9.png?v=1646828242174"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\9.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\9.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_10.png?v=1646828249411" alt="Denzel The First" class="ml-10 cursor-pointer rounded"/></a>
+                            <a href="#"><img
+                                    src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/top_10.png?v=1646828249411"
+                                    alt="Denzel The First" class="ml-10 cursor-pointer rounded" /></a>
                         </div>
                     </div>
                     <div>
                         <div class="w-48 h-96">
-                            <a href="#"><img src="assets\NetflixTop10\10.jpg" alt="Same image" class="cursor-pointer rounded"/></a>
+                            <a href="#"><img src="assets\NetflixTop10\10.jpg" alt="Same image"
+                                    class="cursor-pointer rounded" /></a>
                         </div>
                     </div>
 
@@ -546,11 +595,15 @@
 
             <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="films_sf">
 
-                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
-                    <button onclick="goLeft('films_sf')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('films_sf')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
-                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
-                    <button onclick="goRight('films_sf')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                <div
+                    class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('films_sf')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
             </nav>
@@ -564,11 +617,15 @@
 
             <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="studios_ghibli">
 
-                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
-                    <button onclick="goLeft('studios_ghibli')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('studios_ghibli')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
-                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
-                    <button onclick="goRight('studios_ghibli')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                <div
+                    class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('studios_ghibli')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
             </nav>
@@ -582,11 +639,15 @@
 
             <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="dessins_animes">
 
-                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
-                    <button onclick="goLeft('dessins_animés')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('dessins_animés')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
-                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
-                    <button onclick="goRight('dessins_animés')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                <div
+                    class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('dessins_animés')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
             </nav>
@@ -600,11 +661,15 @@
 
             <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="succes">
 
-                <div class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
-                    <button onclick="goLeft('succes')"><i class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
+                <div
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    <button onclick="goLeft('succes')"><i
+                            class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
-                <div class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
-                    <button onclick="goRight('succes')"><i class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
+                <div
+                    class="absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] bg-gradient-to-l from-black">
+                    <button onclick="goRight('succes')"><i
+                            class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
                 <div>
@@ -715,4 +780,5 @@
         </section>
     </footer>
 </body>
+
 </html>

@@ -19,6 +19,7 @@ function goLeft (container) {
 //    document.getElementById('bannerVideo').pause()
 // }
 
+//
 $(document).ready(function () {
     $("#video").css("display", "none"); //HIDE THE VIDEO INITIALLY
     $(".thumbnail").hover(function () {
@@ -34,18 +35,6 @@ $(document).ready(function () {
         $(".head-img").css("display", "block");
     });
 });
-
-// document.getElementById("banner").addEventListener("mouseover", function() {
-// 	document.getElementById('bannerImage').classList.add('hidden')
-//     document.getElementById('bannerVideo').classList.remove('hidden')
-// });
-
-// document.getElementById("banner").addEventListener("mouseleave", function() {
-//     document.getElementById('bannerImage').classList.add('hidden')
-//     document.getElementById('bannerVideo').classList.remove('hidden')
-// });
-
-
 
 //Darken the navbar on scroll
 $(function () {
