@@ -27,9 +27,9 @@
     </style>
 </head>
 
-<body class="bg-black select-none cursor-auto overflow-x-hidden no-scrollbar">
+<body class="bg-black select-none cursor-auto overflow-x-hidden no-scrollbar -z-50">
     <header class="">
-        <section class="bg-gradient-to-b from-black w-full fixed top-0 z-100" id="navbar">
+        <section class="bg-gradient-to-b from-black w-full fixed top-0 z-50" id="navbar">
             <img src="assets\netflix-header.png"
                 class="h-16 hidden mx-auto xl:hidden md:block hover:cursor-pointer "></i>
 
@@ -43,7 +43,7 @@
                         <div>
                             <a class="m-4 hover:text-gray-300 hover:duration-150 hover:cursor-pointer"
                                 href="https://www.netflix.com/browse">
-                                Acceuil
+                                Accueil
                             </a>
                         </div>
                         <div>
@@ -142,7 +142,7 @@
 
         <!--                                For you                                                   -->
 
-        <section class="px-8 group" onmouseover="onMouseOut()">
+        <section class="px-8 group">
             <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">For you</p>
 
             <nav class=" flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar " id="for_you">
@@ -163,14 +163,14 @@
 
         <!--                                Your list                                                   -->
 
-        <section class="px-8 group">
+        <section class="px-8 group overflow-y-visible">
 
             <p class="text-white font-bold text-2xl space-x-4 pt-4 justify-start">Your list</p>
 
-            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar" id="your_list">
+            <nav class="flex space-x-4 mt-8 mb-2 overflow-x-scroll no-scrollbar overflow-y-visible h-48" id="your_list">
 
                 <div
-                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black">
+                    class="absolute text-3xl opacity-0 group-hover:opacity-100 pt-8 w-48 h-[162px] left-0 bg-gradient-to-r from-black ">
                     <button onclick="goLeft('your_list')"><i
                             class="fas fa-angle-left text-white absolute text-3xl opacity-0 group-hover:opacity-100 pl-4"></i></button>
                 </div>
@@ -180,54 +180,41 @@
                             class="fas fa-angle-right text-white absolute right-2 text-3xl opacity-0 group-hover:opacity-100 "></i></button>
                 </div>
 
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81221020"><img class="w-72 rounded"
-                                src="assets\Series\BNA.jpg"></a>
+                    <div class="overflow-y-visible">
+                        <div class="thumbnail w-72 group0">
+                            <img src="assets\Series\BNA.jpg" alt=""
+                                class="thumbnail head-img w-72 rounded z-40 grou0-hover:-z-40 absolute" />
+                            <video src="assets\Videos\TeaserBNA.mp4" alt="" loop muted id="video"
+                                class="w-72 rounded absolute hover:scale-125 hover:pl-8"></video>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81220465"><img class="w-72 rounded"
-                                src="assets\Series\GreatPretender.jpg"></a>
+                
+                    <div class="overflow-y-visible">
+                        <div class="thumbnail w-72 group1">
+                            <img src="assets\Series\GreatPretender.jpg" alt=""
+                                class="thumbnail head-img w-72 rounded z-50 group1-hover:-z-50 absolute" />
+                            <video src="assets\Videos\TeaserGreatPretender.mp4" alt="" loop muted id="video"
+                                class="w-72 rounded absolute hover:z-40 hover:scale-125 hover:pl-8"></video>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/80992346"><img class="w-72 rounded"
-                                src="assets\Series\SheRa.jpg"></a>
+
+                    <div class="overflow-y-visible">
+                        <div class="thumbnail w-72 group2">
+                            <img src="assets\Series\NGNL.jpg" alt=""
+                                class="thumbnail head-img w-72 rounded z-50 group2-hover:-z-50 absolute" />
+                            <video src="assets\Videos\TeaserNGNL.mp4" alt="" loop muted id="video"
+                                class="w-72 rounded absolute hover:scale-125 hover:pl-8"></video>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/70186121"><img class="w-72 rounded"
-                                src="assets\Series\AngelBeast.jpg"></a>
+
+                    <div class="overflow-y-visible">
+                        <div class="thumbnail w-72 group3">
+                            <img src="assets\Series\SheRa.jpg" alt=""
+                                class="thumbnail head-img w-72 rounded z-50 group3-hover:-z-50 absolute" />
+                            <video src="assets\Videos\TeaserSheRa.mp4" alt="" loop muted id="video"
+                                class="w-72 rounded absolute hover:scale-125 hover:pl-8"></video>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81056764"><img class="w-72 rounded"
-                                src="assets\Series\SkyHighSurvival.jpg"></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81056764"><img class="w-72 rounded"
-                                src="assets\Series\SkyHighSurvival.jpg"></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81056764"><img class="w-72 rounded"
-                                src="assets\Series\SkyHighSurvival.jpg"></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="w-72">
-                        <a href="https://www.netflix.com/watch/81056764"><img class="w-72 rounded"
-                                src="assets\Series\SkyHighSurvival.jpg"></a>
-                    </div>
-                </div>
 
             </nav>
         </section>

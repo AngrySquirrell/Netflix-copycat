@@ -8,6 +8,9 @@ function goLeft (container) {
     document.getElementById(container).scrollLeft -= offset;
 };
 
+
+
+
 // function onMouseOver(){
 //    document.getElementById('bannerImage').classList.add('hidden')
 //    document.getElementById('bannerVideo').classList.remove('hidden')
